@@ -1,0 +1,144 @@
+
+/*research css */
+
+
+/* Main Content Styles */
+.research-content {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 80px auto 20px; /* Adjusted for fixed header */
+  }
+  
+  /* Research Guidance Section */
+  .research-guidance {
+    margin-bottom: 40px;
+  }
+  
+  .guidance-stats {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .stat {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    flex: 1 1 calc(33.333% - 40px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stat h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .stat p {
+    font-size: 1.5em;
+    color: #f39c12;
+    margin: 0;
+  }
+  
+  /* Research Specialization Section */
+  .research-specialization {
+    margin-bottom: 40px;
+  }
+  
+  .research-specialization ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .research-specialization li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px 20px;
+    flex: 1 1 calc(20% - 20px);
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Projects Section */
+  .projects {
+    margin-bottom: 40px;
+  }
+  
+  .project-table {
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  table th, table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  table th {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Consultancy Section */
+  .consultancy {
+    margin-bottom: 40px;
+  }
+  
+  .consultancy-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .consultancy-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1 1 calc(33.333% - 40px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .consultancy-item h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .consultancy-item p {
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .guidance-stats, .consultancy-list {
+      flex-direction: column;
+    }
+  
+    .stat, .consultancy-item {
+      flex: 1 1 100%;
+    }
+  
+    table {
+      font-size: 0.9em;
+    }
+  }

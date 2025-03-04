@@ -1,0 +1,164 @@
+
+/* Footer Styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer .line1 {
+  border: 1px solid #555;
+  margin-bottom: 20px;
+}
+
+.footer .foot {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.footer .f-1,
+.footer .f-2,
+.footer .f-3 {
+  flex: 1 1 300px;
+  text-align: left;
+}
+
+.footer .f-1-1 {
+  margin: 10px 0;
+  font-size: 0.9em;
+  color: #ccc;
+}
+
+.footer .f-3-1 {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.footer .f-3-1 i {
+  margin-right: 10px;
+  color: #f39c12;
+}
+
+.footer .f-3-1 p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #ccc;
+}
+
+.footer .details {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.footer .details a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.footer .details a:hover {
+  color: #f39c12;
+}
+
+.footer .vertical1,
+.footer .vertical2,
+.footer .vertical3 {
+  width: 1px;
+  background-color: #555;
+  margin: 0 10px;
+}
+
+.footer .copyright,
+.footer .reserved {
+  font-size: 0.8em;
+  color: #ccc;
+  margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer .foot {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer .f-1,
+  .footer .f-2,
+  .footer .f-3 {
+    text-align: center;
+  }
+
+  .footer .f-3-1 {
+    justify-content: center;
+  }
+
+  .footer .details {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .footer .vertical1,
+  .footer .vertical2,
+  .footer .vertical3 {
+    display: none;
+  }
+}
+
+
+
+/*outreach*/
+/* Dropdown Menu */
+/*.drop-down {
+  position: relative;
+}
+
+.drop-down-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #444;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.drop-down-menu li {
+  margin: 0;
+}
+
+.drop-down-menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9em;
+  padding: 5px 10px;
+  display: block;
+}
+
+.drop-down-menu li a:hover {
+  background-color: #f39c12;
+  color: #fff;
+}
+
+.drop-down:hover .drop-down-menu {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+

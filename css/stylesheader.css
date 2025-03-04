@@ -1,0 +1,179 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Fixed Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-left {
+    margin-left: 20px;
+  }
+  
+  .header-left h1 {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+  
+  .header-left p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #ccc;
+  }
+  
+  .header-right {
+    margin-right: 20px;
+  }
+  
+  .header-right ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-right ul li {
+    margin-left: 25px;
+    position: relative;
+  }
+  
+  .header-right ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 400;
+    transition: color 0.3s ease;
+  }
+  
+  .header-right ul li a:hover {
+    color: #f39c12;
+  }
+  
+  /* Dropdown Menu */
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 150px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dropdown-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9em;
+    display: block;
+    padding: 8px 0;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: #555;
+  }
+  
+  .dropdown-menu.active {
+    display: block;
+  }
+  
+  /* Hamburger Menu */
+  .hamburger {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+  
+  /* Specific Margin for Contact Link */
+  .contact-link {
+    margin-right: 20px; /* Added margin to the right for the Contact link */
+  }
+  
+  /* Responsive Header Styles */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 15px 20px;
+    }
+  
+    .header-left {
+      margin-left: 0;
+      margin-bottom: 10px;
+    }
+  
+    .header-right {
+      margin-right: 0;
+      width: 100%;
+    }
+  
+    .header-right ul {
+      flex-direction: column;
+      align-items: flex-start;
+      display: none;
+    }
+  
+    .header-right ul.active {
+      display: flex;
+    }
+  
+    .header-right ul li {
+      margin-left: 0;
+      margin-bottom: 10px;
+    }
+  
+    .dropdown-menu {
+      position: static;
+      display: none;
+      background-color: #555;
+      border-radius: 0;
+      box-shadow: none;
+    }
+  
+    .dropdown-menu.active {
+      display: block;
+      position: relative;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header-left h1 {
+      font-size: 1.2em;
+    }
+  
+    .header-left p {
+      font-size: 0.8em;
+    }
+  
+    .header-right ul li a {
+      font-size: 0.9em;
+    }
+  
+    .dropdown-menu {
+      min-width: 120px;
+    }
+  }

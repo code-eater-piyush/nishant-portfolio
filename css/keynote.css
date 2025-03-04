@@ -1,0 +1,82 @@
+/*keynote*/
+/* Main Content Styles */
+main.keynote-speaker {
+    padding: 120px 20px 20px; /* Adjusted for fixed header */
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  main.keynote-speaker h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .keynote-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Spacing between keynote items */
+  }
+  
+  .keynote-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .keynote-item:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  }
+  
+  .keynote-item h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .keynote-item p {
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  .keynote-item p strong {
+    color: #333; /* Bold text for labels */
+  }
+  
+  /* Responsive Design for Main Content */
+  @media (max-width: 768px) {
+    main.keynote-speaker h2 {
+      font-size: 1.8em; /* Smaller heading for tablets */
+    }
+  
+    .keynote-item h3 {
+      font-size: 1.1em; /* Smaller heading for keynote items */
+    }
+  
+    .keynote-item p {
+      font-size: 0.9em; /* Smaller text for keynote items */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    main.keynote-speaker h2 {
+      font-size: 1.5em; /* Smaller heading for mobile */
+    }
+  
+    .keynote-item h3 {
+      font-size: 1em; /* Smaller heading for keynote items */
+    }
+  
+    .keynote-item p {
+      font-size: 0.85em; /* Smaller text for keynote items */
+    }
+  
+    .keynote-item {
+      padding: 15px; /* Reduced padding for mobile */
+    }
+  }

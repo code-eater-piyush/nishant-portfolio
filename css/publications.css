@@ -1,0 +1,155 @@
+/*publictions */
+
+/* Publications Section */
+.publications-section {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: left;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .publications-section h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .year-section {
+    margin-bottom: 40px;
+  }
+  
+  .year-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .year-section ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+    color: #666;
+  }
+  
+  .year-section ol li {
+    font-size: 1em;
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  
+  /* Books Section */
+  .books-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: left;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .books-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .books-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #666;
+  }
+  
+  .books-section ul li {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .publications-section,
+    .books-section {
+      padding: 20px 10px;
+    }
+  
+    .publications-section h2,
+    .books-section h2 {
+      font-size: 1.8em;
+    }
+  
+    .year-section h3 {
+      font-size: 1.3em;
+    }
+  
+    .year-section ol li,
+    .books-section ul li {
+      font-size: 0.9em;
+    }
+  }
+  /* Chapters Published Section */
+  .chapters-section {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: left;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .chapters-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .chapters-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #666;
+  }
+  
+  .chapters-section ul li {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  
+  /* Patents Section */
+  .patents-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: left;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .patents-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .patents-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #666;
+  }
+  
+  .patents-section ul li {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .chapters-section,
+    .patents-section {
+      padding: 20px 10px;
+    }
+  
+    .chapters-section h2,
+    .patents-section h2 {
+      font-size: 1.8em;
+    }
+  
+    .chapters-section ul li,
+    .patents-section ul li {
+      font-size: 0.9em;
+    }
+  }
