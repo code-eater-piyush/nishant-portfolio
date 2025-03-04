@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dr. Nishant Singh - Home</title>
-  <link rel="stylesheet" href="css/stylesfooter.css">
-  <link rel="stylesheet" href="css/about.css">
-  <link rel="stylesheet" href="css/stylesheader.css">
+  <link rel="stylesheet" href="../css/stylesfooter.css">
+  <link rel="stylesheet" href="../css/contact.css">
+  <link rel="stylesheet" href="../css/stylesheader.css">
   <!-- Font Awesome for Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <!-- Google Fonts for a Modern Look -->
@@ -24,7 +24,7 @@
         <i class="fas fa-bars"></i>
       </div>
       <ul id="nav-menu">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="../index.html">Home</a></li>
         <li class="dropdown">
           <a href="#">About <i class="fas fa-chevron-down"></i></a>
           <div class="dropdown-menu">
@@ -54,54 +54,62 @@
       </ul>
     </nav>
   </header>
-  <section>
-     <!-- Awards Gallery Section -->
-<section class="awards-gallery">
-    <h2>Awards Gallery</h2>
-  
-    <!-- Video Section -->
-    <div class="video-section">
-      <video controls>
-        <source src="images/nsv.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </div>
-  
-    <!-- Photo Gallery -->
-    <div class="photo-gallery">
-      <div class="photo">
-        <img src="images/nsc1.jpg" alt="Award 1">
+<section class="contact-form-section">
+    <h2>Contact Me</h2>
+    <form class="contact-form">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
       </div>
-      <div class="photo">
-        <img src="images/nsc2.jpg" alt="Award 2">
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
       </div>
-      <div class="photo">
-        <img src="images/nsc3.jpg" alt="Award 3">
+      <div class="form-group">
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required>
       </div>
-      <div class="photo">
-        <img src="images/nsc4.jpg" alt="Award 4">
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
       </div>
-    </div>
-  
-    <!-- Awards List -->
-    <div class="awards-list">
-      <h3>Awards Received</h3>
-      <ul>
-        <li>•	Shresth Shiksha Shamans 2009 by Sharda Group of Institution.</li>
-        <li>•	Best Performer (Faculty) 2012 by Sharda Group of Institution.</li>
-        <li>•	Best Performer (Faculty) 2014 by Sharda Group of Institution.</li>
-        <li>•	Best Performer (Faculty) 2016 by Sharda Group of Institution.</li>
-        <li>•	“Best Research award” from Hindustan College of Science and Technology, Mathura in the year 2018 and 2019. </li>
-        <li>•	“Best Teacher award” from Dr. A.P.J. Abdul Kalam Technical University, Lucknow 2021.</li>
-        <li>•	“Rudra Ratan Award (Renowned Educationalist)” from Brij Bhoomi Foundation, Mathura, 2021.</li>
-        <li>•	“Research Excellence Award” from HBTU, Kanpur 2023.</li>
-        <li>•	In World Top 2% Scientist List released by Stanford University 2024.</li>
-      </ul>
-    </div>
-  
+      <button type="submit" class="submit-button">Send Message</button>
+    </form>
   </section>
 
+  <!-- Contact Information Section -->
+  <section class="contact-info-section">
+    <h2>Contact Information</h2>
+    <div class="contact-info">
+      <div class="info-item">
+        <i class="fa-solid fa-location-dot"></i>
+        <p>8704, Sri Radha NRI Greens, Vrindavan, Mathura, Uttar Pradesh, India-281121</p>
+      </div>
+      <div class="info-item">
+        <i class="fa-solid fa-envelope"></i>
+        <p>nishant.singh78@gmail.com</p>
+      </div>
+      <div class="info-item">
+        <i class="fa-solid fa-phone-volume"></i>
+        <p>+91997582969, +919557391749</p>
+      </div>
+    </div>
+  </section>
 
+  <!-- Map Section -->
+  <section class="map-section">
+    <h2>Location</h2>
+    <div class="map">
+      <iframe
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.041391423854!2d77.6953153150621!3d27.71722098279048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39733f4a3f1c1b9d%3A0x9c7a7c1b1c1b1c1b!2sSri%20Radha%20NRI%20Greens!5e0!3m2!1sen!2sin!4v1633080000000!5m2!1sen!2sin"
+        width="100%"
+        height="400"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </div>
+  </section>
   <footer class="footer">
     <hr class="line1" width="100%" size="2">
 

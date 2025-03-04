@@ -4,9 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dr. Nishant Singh - Home</title>
-  <link rel="stylesheet" href="css/stylesfooter.css">
-  <link rel="stylesheet" href="css/about.css">
-  <link rel="stylesheet" href="css/stylesheader.css">
+  <link rel="stylesheet" href="../css/stylesfooter.css">
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/stylesheader.css">
+  <link rel="stylesheet" href="../css/carousel.css">
+  
   <!-- Font Awesome for Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <!-- Google Fonts for a Modern Look -->
@@ -24,7 +26,7 @@
         <i class="fas fa-bars"></i>
       </div>
       <ul id="nav-menu">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="../index.html">Home</a></li>
         <li class="dropdown">
           <a href="#">About <i class="fas fa-chevron-down"></i></a>
           <div class="dropdown-menu">
@@ -55,53 +57,44 @@
     </nav>
   </header>
 
-
-  <!-- Education and Qualifications Section -->
-  <section class="education-section">
-    <h2>Education and Qualifications</h2>
-    <div class="education-container">
-      <!-- Qualification 1 -->
-      <div class="education-card">
-        <img src="images/iit-ism-dhanbad-logo-6C57F2704B-seeklogo.com.png" alt="Qualification 1">
-        <h3>Ph.D. </h3>
-        <p>Indian Institute of Technology (ISM), Dhanbad, India</p>
-      </div>
-
-      <!-- Qualification 2 -->
-      <div class="education-card">
-        <img src="images/L_193 (2).gif" alt="Qualification 2">
-        <h3>M. Tech. (Mechanical Engineering)</h3>
-        <p>Gautam Buddha Technical University, Lucknow </p>
-      </div>
-
-      <!-- Qualification 3 -->
-      <div class="education-card">
-        <img src="images/dtu (1).jpg" alt="Qualification 3">
-        <h3>B.Tech. (Mechanical Engineering) </h3>
-        <p>Delhi College of Engineering, Delhi </p>
-      </div>
+<body>
+  <section>
+  <div class="carousel-container">
+    <div class="carousel">
+      <div class="slide"><img src="../images/ns1.jpg" alt="Image 1"></div>
+      <div class="slide"><img src="../images/ns2.jpg" alt="Image 2"></div>
+      <div class="slide"><img src="../images/nsc4.jpg" alt="Image 3"></div>
+      <div class="slide"><img src="../images/nst.jpg" alt="Image 4"></div>
     </div>
+
+    <button class="prev">❮</button>
+    <button class="next">❯</button>
+
+    <div class="carousel-dots"></div>
+  </div>
   </section>
-  <!-- Courses Section -->
-<section class="courses-section">
-    <h2>Courses</h2>
-    <div class="courses-content">
-    
-      <ul>
-        <li>1.	Kinematics of Machines</li>
-        <li>2.	Dynamics of Machines</li>
-        <li>3.	Manufacturing Science</li>
-        <li>4.	Non-Conventional Machining Process</li>
-        
-      </ul>
+
+  <!-- Biography Section -->
+  <section class="biography">
+    <div class="bio-image">
+      <img src="../images/nss.jpg" alt="Professor John Doe">
+    </div>
+    <div class="bio-text">
+      <h2>Biography</h2>
+      <p>
+        Dr. Nishant Kumar Singh is an Associate Professor in the Mechanical Engineering Department at <strong>Harcourt Butler Technical University</strong>, Kanpur, Uttar Pradesh, India. He earned his Ph.D. in modern machining processes from the Indian Institute of Technology (ISM), Dhanbad, India, and his Bachelor of Technology from Delhi Technical University (formerly Delhi College of Engineering), Delhi, India. With 19 years of experience in academia and research, he has established himself as a prominent figure in his field. Dr. Singh has published approximately 120 research papers in high-impact SCI, Scopus, and Web of Science indexed journals. He serves as a reviewer for several reputable journals and is also a member of the editorial team for others. He has mentored numerous M.Tech and Ph.D. students and is the author of ten books published by international houses such as CRC Press, Nova Publishers, River Publishers, and De Gruyter. Furthermore, he is a book series editor for both CRC Press and De Gruyter. Dr. Singh holds over 20 patents and has been recognized by Stanford University as being among the top 2% of scientists worldwide.
+      </p>
     </div>
   </section>
 
-
-  <!-- Footer -->
-  <footer class="footer">
+  <!-- JavaScript for Carousel -->
+  <script src="js/script.js"></script>
+  <script src="js/script2.js"></script>
+  <script src="js/carousel.js"></script>
+</body>
+<footer class="footer">
     <hr class="line1" width="100%" size="2">
-
+  
     <div class="foot">
       <div class="f-1">
         <p class="f-1-1">Awards</p>
@@ -109,37 +102,37 @@
         <p class="f-1-1">Workshop</p>
         <p class="f-1-1">Patent</p>
       </div>
-
+  
       <div class="f-2">
         <p class="f-1-1">Research Specialization</p>
         <p class="f-1-1">Publications</p>
         <p class="f-1-1">Journal</p>
         <p class="f-1-1">International Journal</p>
       </div>
-
+  
       <div class="f-3">
         <div class="f-3-1">
           <i class="fa-solid fa-location-dot"></i>
           <p class="address"> 8704, Sri Radha NRI Greens, Vrindavan, Mathura, Uttar Pradesh, India-281121 </p>
         </div>
-
+  
         <div class="f-3-1">
           <i class="fa-solid fa-envelope"></i>
           <p class="gmail"> nishant.singh78@gmail.com</p>
         </div>
-
+  
         <div class="f-3-1">
           <i class="fa-solid fa-globe"></i>
           <p class="website">www.nishantksingh.com</p>
         </div>
-
+  
         <div class="f-3-1">
           <i class="fa-solid fa-phone-volume"></i>
           <p class="number">+91997582969, +919557391749</p>
         </div>
       </div>
     </div>
-
+  
     <div class="details">
       <a class="homedetails" href="index.html">Home</a>
       <div class="vertical1"></div>
@@ -149,10 +142,10 @@
       <div class="vertical3"></div>
       <a class="contact-1" href="">Contact</a>
     </div>
-
+  
     <p class="copyright">Copyright 2018 - 2024</p>
     <p class="reserved">All rights reserved.</p>
   </footer>
-  <script src="js/script2.js"></script>
-</body>
+
+  </body>
 </html>
