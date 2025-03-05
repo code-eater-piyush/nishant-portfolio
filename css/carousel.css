@@ -9,8 +9,12 @@
     overflow: hidden;
     box-shadow: 0.1vw 0.1vw 1vw rgba(0, 0, 0, 0.2);
     border-radius: 10px; /* Rounded corners */
-  }
   
+  }
+  .top-carousel {
+    padding-top: 40px ;
+
+  }
   /* Carousel Slides */
   .carousel {
     display: flex;

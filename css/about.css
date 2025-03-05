@@ -14,6 +14,7 @@ body {
     margin-bottom: 30px;
     text-align: center;
     position: relative;
+    padding-top: 40px;
   }
   
   h2::after {
@@ -194,6 +195,7 @@ body {
   @media (max-width: 768px) {
     h2 {
       font-size: 1.8em;
+      padding-top: 40px;
     }
   
     .education-card {

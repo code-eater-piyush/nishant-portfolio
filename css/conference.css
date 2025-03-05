@@ -105,8 +105,8 @@
     max-width: 1200px;
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
+    margin: 80px auto 20px;
   }
-  
   .conferences-section h2 {
     font-size: 2.5em;
     margin-bottom: 30px;
