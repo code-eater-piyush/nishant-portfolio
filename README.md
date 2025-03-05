@@ -1,6 +1,6 @@
-## Dr. Nishant Singh - *A portfolio website✨* 
+# [**Dr. Nishant Singh** - *A portfolio website✨*](https://code-eater-piyush.github.io/nishant-portfolio/)
 
 ![Nishant portofolio webpage](images/website-frontage.jpeg)
 
-> ### The Website is deployed here⬇️⬇️
-[WEBSITE](https://code-eater-piyush.github.io/nishant-portfolio/)
+# Website deployment:- ⬇️⬇️
+[Portfolio](https://code-eater-piyush.github.io/nishant-portfolio/)
