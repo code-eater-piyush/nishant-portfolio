@@ -56,106 +56,94 @@
   </header>
   <section>
      <!-- Awards Gallery Section -->
-<section class="awards-gallery">
-    <h2>Awards Gallery</h2>
-  
-    <!-- Video Section -->
-    <div class="video-section">
-      <video controls>
-        <source src="../images/nsv.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </div>
-  
-    <!-- Photo Gallery -->
-    <div class="photo-gallery">
-      <div class="photo">
-        <img src="../images/nsc1.jpg" alt="Award 1">
+     <section class="awards-gallery">
+      <h2>Awards Gallery</h2>
+    
+      <!-- Video Section -->
+      <div class="video-section">
+        <video controls>
+          <source src="../images/nsv.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
       </div>
-      <div class="photo">
-        <img src="../images/nsc2.jpg" alt="Award 2">
+    
+      <!-- Photo Gallery -->
+      <div class="photo-gallery">
+        <div class="photo">
+          <img src="../images/nsc1.jpg" alt="Award 1" onclick="openLightbox('../images/nsc1.jpg')">
+        </div>
+        <div class="photo">
+          <img src="../images/nsc2.jpg" alt="Award 2" onclick="openLightbox('../images/nsc2.jpg')">
+        </div>
+        <div class="photo">
+          <img src="../images/nsc3.jpg" alt="Award 3" onclick="openLightbox('../images/nsc3.jpg')">
+        </div>
+        <div class="photo">
+          <img src="../images/nsc4.jpg" alt="Award 4" onclick="openLightbox('../images/nsc4.jpg')">
+        </div>
       </div>
-      <div class="photo">
-        <img src="../images/nsc3.jpg" alt="Award 3">
+    
+      <!-- Lightbox -->
+      <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close">&times;</span>
+        <img id="lightbox-img" class="lightbox-content">
       </div>
-      <div class="photo">
-        <img src="../images/nsc4.jpg" alt="Award 4">
+    
+      <!-- Awards List -->
+      <div class="awards-list">
+        <h3>Awards Received</h3>
+        <ul>
+          <li>• Shresth Shiksha Shamans 2009 by Sharda Group of Institution.</li>
+          <li>• Best Performer (Faculty) 2012 by Sharda Group of Institution.</li>
+          <li>• Best Performer (Faculty) 2014 by Sharda Group of Institution.</li>
+          <li>• Best Performer (Faculty) 2016 by Sharda Group of Institution.</li>
+          <li>• “Best Research award” from Hindustan College of Science and Technology, Mathura in the year 2018 and 2019.</li>
+          <li>• “Best Teacher award” from Dr. A.P.J. Abdul Kalam Technical University, Lucknow 2021.</li>
+          <li>• “Rudra Ratan Award (Renowned Educationalist)” from Brij Bhoomi Foundation, Mathura, 2021.</li>
+          <li>• “Research Excellence Award” from HBTU, Kanpur 2023.</li>
+          <li>• In World Top 2% Scientist List released by Stanford University 2024.</li>
+        </ul>
       </div>
-    </div>
-  </section>
-    <!-- Awards List -->
-    <div class="awards-list">
-      <h3>Awards Received</h3>
-      <ul>
-        <li>•	Shresth Shiksha Shamans 2009 by Sharda Group of Institution.</li>
-        <li>•	Best Performer (Faculty) 2012 by Sharda Group of Institution.</li>
-        <li>•	Best Performer (Faculty) 2014 by Sharda Group of Institution.</li>
-        <li>•	Best Performer (Faculty) 2016 by Sharda Group of Institution.</li>
-        <li>•	“Best Research award” from Hindustan College of Science and Technology, Mathura in the year 2018 and 2019. </li>
-        <li>•	“Best Teacher award” from Dr. A.P.J. Abdul Kalam Technical University, Lucknow 2021.</li>
-        <li>•	“Rudra Ratan Award (Renowned Educationalist)” from Brij Bhoomi Foundation, Mathura, 2021.</li>
-        <li>•	“Research Excellence Award” from HBTU, Kanpur 2023.</li>
-        <li>•	In World Top 2% Scientist List released by Stanford University 2024.</li>
-      </ul>
-    </div>
-  
-  </section>
-
+    </section>
+    </section>
 
   <footer class="footer">
-    <hr class="line1" width="100%" size="2">
-
-    <div class="foot">
-      <div class="f-1">
-        <p class="f-1-1">Awards</p>
-        <p class="f-1-1">Academic & Administration</p>
-        <p class="f-1-1">Workshop</p>
-        <p class="f-1-1">Patent</p>
+    <hr class="footer-line">
+  
+    <!-- Email, Phone, and Address Details -->
+    <div class="footer-details">
+      <div class="detail-item">
+        <i class="fa-solid fa-envelope"></i>
+        <p class="email">nishant.singh78@gmail.com</p>
       </div>
-
-      <div class="f-2">
-        <p class="f-1-1">Research Specialization</p>
-        <p class="f-1-1">Publications</p>
-        <p class="f-1-1">Journal</p>
-        <p class="f-1-1">International Journal</p>
+  
+      <div class="detail-item">
+        <i class="fa-solid fa-phone-volume"></i>
+        <p class="phone">+91997582969, +919557391749</p>
       </div>
-
-      <div class="f-3">
-        <div class="f-3-1">
-          <i class="fa-solid fa-location-dot"></i>
-          <p class="address"> 8704, Sri Radha NRI Greens, Vrindavan, Mathura, Uttar Pradesh, India-281121 </p>
-        </div>
-
-        <div class="f-3-1">
-          <i class="fa-solid fa-envelope"></i>
-          <p class="gmail"> nishant.singh78@gmail.com</p>
-        </div>
-
-        <div class="f-3-1">
-          <i class="fa-solid fa-globe"></i>
-          <p class="website">www.nishantksingh.com</p>
-        </div>
-
-        <div class="f-3-1">
-          <i class="fa-solid fa-phone-volume"></i>
-          <p class="number">+91997582969, +919557391749</p>
-        </div>
+  
+      <div class="detail-item">
+        <i class="fa-solid fa-location-dot"></i>
+        <p class="address">8704, Sri Radha NRI Greens, Vrindavan, Mathura, Uttar Pradesh, India-281121</p>
       </div>
     </div>
-
-    <div class="details">
-      <a class="homedetails" href="index.html">Home</a>
-      <div class="vertical1"></div>
-      <a class="aboutdetails" href="">About</a>
-      <div class="vertical2"></div>
-      <a class="project-1" href="">Projects</a>
-      <div class="vertical3"></div>
-      <a class="contact-1" href="">Contact</a>
+  
+    <!-- Navigation Links with Vertical Lines -->
+    <div class="footer-nav">
+      <a class="nav-link" href="../nishant-portfolio/index.html">Home</a>
+      <div class="vertical-line"></div>
+     
+     
+      <a class="nav-link" href="contact.html">Contact</a>
     </div>
-
-    <p class="copyright">Copyright 2018 - 2024</p>
-    <p class="reserved">All rights reserved.</p>
+  
+    <!-- Copyright Section -->
+    <div class="copyright-section">
+      <p class="copyright">Copyright 2018 - 2024</p>
+      <p class="reserved">All rights reserved.</p>
+    </div>
   </footer>
   <script src="../js/script2.js"></script>
+  <script src="../js/about.js"></script>
 </body>
 </html>
