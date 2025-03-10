@@ -8,7 +8,7 @@
     max-width: 1200px;
     margin: 20px auto;
    background:  #333;
-   padding-bottom: 80px;
+   padding-bottom: 40px;
   }
    
   h2{
@@ -59,7 +59,7 @@
   
     .bio-image {
       margin-right: 0;
-      margin-bottom: 20px;
+    
     }
   }  
   
