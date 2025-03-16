@@ -153,3 +153,13 @@
       font-size: 0.9em;
     }
   }
+  .year-header {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
+
+.year-content {
+    margin-top: 10px;
+    padding-left: 20px;
+}
