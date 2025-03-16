@@ -153,13 +153,59 @@
       font-size: 0.9em;
     }
   }
-  .year-header {
-    cursor: pointer;
-    color: blue;
-    text-decoration: underline;
-}
 
-.year-content {
-    margin-top: 10px;
-    padding-left: 20px;
-}
+  /* Responsive Design for Larger Screens */
+  @media (min-width: 1200px) {
+    .publications-section,
+    .books-section,
+    .chapters-section,
+    .patents-section {
+      padding: 60px 40px;
+    }
+  
+    .publications-section h2,
+    .books-section h2,
+    .chapters-section h2,
+    .patents-section h2 {
+      font-size: 2.5em;
+    }
+  
+    .year-section h3 {
+      font-size: 2em;
+    }
+  
+    .year-section ol li,
+    .books-section ul li,
+    .chapters-section ul li,
+    .patents-section ul li {
+      font-size: 1.2em;
+    }
+  }
+  
+  /* Enhanced Mobile Responsiveness */
+  @media (max-width: 480px) {
+    .publications-section,
+    .books-section,
+    .chapters-section,
+    .patents-section {
+      padding: 15px 5px;
+    }
+  
+    .publications-section h2,
+    .books-section h2,
+    .chapters-section h2,
+    .patents-section h2 {
+      font-size: 1.5em;
+    }
+  
+    .year-section h3 {
+      font-size: 1.1em;
+    }
+  
+    .year-section ol li,
+    .books-section ul li,
+    .chapters-section ul li,
+    .patents-section ul li {
+      font-size: 0.8em;
+    }
+  }
