@@ -7,7 +7,8 @@ body {
     background-color: #f4f4f4;
     color: #333;
   }
-  
+ 
+  /*
   h2 {
     font-size: 2.2em;
     color: #333;
@@ -15,8 +16,8 @@ body {
     text-align: center;
     position: relative;
     padding-top: 40px;
-  }
-  
+  }*/
+
   h2::after {
     content: '';
     display: block;
@@ -30,15 +31,19 @@ body {
   .education-section {
     padding: 60px 20px;
     background-color: #fff;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
   }
   
   .education-container {
-    display: flex;
-    justify-content: space-around;
+    display: flex;  
+    justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
+    margin-top: 40px;
   }
   
   .education-card {
@@ -113,6 +118,7 @@ body {
 .awards-gallery {
   padding: 60px 20px;
   background-color: #fff;
+  margin-top: 50px;
 }
 
 .video-section {

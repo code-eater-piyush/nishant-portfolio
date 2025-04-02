@@ -1,13 +1,14 @@
 /* Carousel Container */
 .carousel-container {
     margin: auto;
-    margin-top: 100px; /* Adjust this value based on the header height */
+    margin-top: 140px; /* Adjust this value based on the header height */
     position: relative;
-    height: 70vh;
+    height: 60vh;
     width: 85%;
     max-width: 1200px; /* Limit maximum width for larger screens */
     overflow: hidden;
-    box-shadow: 0.1vw 0.1vw 1vw rgba(0, 0, 0, 0.2);
+   /* box-shadow: 0.1vw 0.1vw 1vw rgba(0, 0, 0, 0.2); */
+   box-shadow: 0.5px 0.5px 10px rgb(53, 53, 53);
     border-radius: 10px; /* Rounded corners */
   
   }
