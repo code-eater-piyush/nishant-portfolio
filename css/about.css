@@ -8,23 +8,25 @@ body {
     color: #333;
   }
  
-  /*
   h2 {
-    font-size: 2.2em;
+    font-size: 3.5em;
     color: #333;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     text-align: center;
     position: relative;
     padding-top: 40px;
-  }*/
+    margin-top: 0;
+    
+  }
 
   h2::after {
     content: '';
     display: block;
-    width: 60px;
+    width: 100px;
     height: 3px;
     background-color: #f39c12; /* Accent line under heading */
     margin: 10px auto 0;
+    margin-top: 0;
   }
   
   /* Education and Qualifications Section */
@@ -83,7 +85,7 @@ body {
   /* Courses Section */
   .courses-section {
     padding: 60px 20px;
-    background-color: #f9f9f9;
+    background-color: white;
   }
   
   .courses-content {
@@ -94,6 +96,7 @@ body {
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
   }
   
   .courses-content ul {
