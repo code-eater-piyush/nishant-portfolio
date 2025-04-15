@@ -155,11 +155,57 @@
   }
   .year-header {
     cursor: pointer;
-    color: blue;
+    color: #333;
     text-decoration: underline;
 }
 
 .year-content {
     margin-top: 10px;
     padding-left: 20px;
+}
+
+.year-section {
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  background-color: #ffffff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
+}
+
+.year-section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.year-section h3 {
+  margin: 0;
+  padding: 16px 20px;
+  font-size: 1.2rem;
+  background-color: #333;
+  color: #ffffff;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.2s;
+}
+
+.year-section h3:hover {
+  background-color: #333;
+}
+
+.year-section ol {
+  display: none;
+  padding: 15px 25px;
+  background-color: #f9f9f9;
+  list-style-position: inside;
+}
+
+.year-section.active ol {
+  display: block;
+}
+
+.year-section ol li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+  color: #333;
 }
