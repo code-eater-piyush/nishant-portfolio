@@ -1,6 +1,12 @@
 {
+<<<<<<< HEAD
   "name": "contact-form",
   "version": "1.0.0",
+=======
+  "name": "nishant-portfolio-2",
+  "version": "1.0.0",
+  "description": "![Nishant portofolio webpage](images/website-frontage.jpeg)",
+>>>>>>> 98f25506ce6df26901211328a731c3630f3b5b34
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -8,11 +14,17 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+<<<<<<< HEAD
   "description": "",
   "dependencies": {
     "body-parser": "^1.20.3",
     "cors": "^2.8.5",
     "express": "^4.21.2",
+=======
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+>>>>>>> 98f25506ce6df26901211328a731c3630f3b5b34
     "nodemailer": "^6.10.0"
   }
 }
