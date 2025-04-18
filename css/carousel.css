@@ -162,3 +162,8 @@
       padding: 20px 0 30px;
   }
 }
+@media (max-width: 768px) {
+  .carousel-container {
+    margin-top: 150px; /* Increased to account for mobile nav height */
+  }
+}
