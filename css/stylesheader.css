@@ -1,57 +1,55 @@
-
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
   padding: 0;
-/*  background-color: #f4f4f4;*/
-background-color: white;
+  background-color: white;
   color: #333;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Fixed Header */
 header {
-/*  display: flex;  */
-/*  justify-content: space-between;*/
-  
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   background-color: #292929;
   color: #fff;
-  padding: 15px 30px;
+  padding: 15px 5%;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 90%; /* Adjusted width with padding */
   z-index: 1000;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
 }
 
 /* Header Left Section */
 .header-left {
-  margin-left: 20px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  flex: 1 1 auto;
+  min-width: 0; /* Prevent flex item from overflowing */
 }
 
 .header-left h1 {
   margin: 0;
-  font-size: 1.8em;
+  font-size: clamp(1.2rem, 4vw, 1.8rem); /* Responsive font size */
   font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .header-left p {
-  margin: 0;
+  margin: 5px 0 0 0;
   font-size: 0.9em;
   color: #ccc;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-/* Header Right Section */
+/* Header Right Section - Navigation */
 .header-right {
-/*  margin-right: 50px;  */
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin-top: 20px;
 }
 
 .header-right ul {
@@ -59,70 +57,39 @@ header {
   margin: 0;
   padding: 0;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: #f39c12;
-  width: 80%;
+  gap: 15px;
 }
-
-
 
 .header-right ul li {
-  margin-left: 25px;
   position: relative;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .header-right ul li a {
   color: #fff;
   text-decoration: none;
   font-size: 1em;
   font-weight: 400;
-  transition: color 0.3s ease, transform 0.3s ease; /* Keep smooth effect */
-  color: #ff9900;
-  padding: 5px 14px; /* Keep padding consistent */
-  border: 2px solid transparent; /* Set transparent border initially */
-  border-radius: 10px;
+  transition: color 0.3s ease;
+  padding: 8px 12px;
+  white-space: nowrap;
 }
 
 .header-right ul li a:hover {
-  border-color: #ff9900; /* Just change border color instead of adding a new border */
-  transform: scale(1.1);
+  color: #ff9900;
 }
-
-.header-right ul li.dropdown {
-  position: relative; /* Keep this for positioning */
-}
-
-
 
 /* Dropdown Menu */
 .dropdown-menu {
-  
   position: absolute;
-  top: 130%;
-  left: 50%; /* Center the dropdown horizontally */
-  transform: translateX(-50%);
-  right: 10px;
+  top: 100%;
+  left: 0;
   display: none;
-  
   background-color: #444;
-  padding: 10px;
+  padding: 10px 0;
   border-radius: 5px;
-  min-width: 150px;
+  min-width: 180px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 100;
 }
 
 .dropdown-menu a {
@@ -130,100 +97,164 @@ header {
   text-decoration: none;
   font-size: 0.9em;
   display: block;
-  padding: 8px 0;
+  padding: 8px 20px;
   transition: background-color 0.3s ease;
+  white-space: nowrap;
 }
 
 .dropdown-menu a:hover {
   background-color: #555;
-  display: block;
 }
 
-/* Dropdown on Hover (Desktop Only) */
-@media (min-width: 769px) {
-  .dropdown:hover .dropdown-menu {
-    display: block;
-  }
-}
-
-/* Hamburger Menu */
+/* Hamburger Menu - Only visible on mobile */
 .hamburger {
   display: none;
   font-size: 1.5em;
   cursor: pointer;
+  color: white;
+  margin-left: 15px;
+  transition: transform 0.3s ease;
+  flex-shrink: 0; /* Prevent shrinking */
 }
 
-/* Specific Margin for Contact Link */
-.contact-link {
-  margin-right: 20px;
+.hamburger:hover {
+  color: #ff9900;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 280px;
+  height: 100%;
+  background-color: #292929;
+  color: white;
+  z-index: 999;
+  transition: left 0.3s ease;
+  padding-top: 80px;
+  overflow-y: auto;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-menu li {
+  padding: 15px 20px;
+  border-bottom: 1px solid #444;
+}
+
+.sidebar-menu li a {
+  color: #ff9900;
+  text-decoration: none;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.sidebar-menu li a:hover {
   color: white;
 }
 
-/* Responsive Header Styles */
+.sidebar-dropdown {
+  display: none;
+  padding-left: 20px;
+}
+
+.sidebar-dropdown.active {
+  display: block;
+}
+
+.main-content {
+  margin-left: 0;
+  transition: margin-left 0.3s ease;
+  padding-top: 90px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+  display: none;
+}
+
+.overlay.active {
+  display: block;
+}
+
+/* Responsive Styles */
 @media (max-width: 768px) {
   header {
-    flex-direction: column;
-    align-items: flex-start;
     padding: 15px 20px;
+    width: calc(100% - 40px); /* Account for padding */
   }
-
-  .header-left {
-    margin-left: 0;
-    margin-bottom: 10px;
-  }
-
-  .header-right {
-    margin-right: 0;
-    width: 100%;
-  }
-
+  
   .header-right ul {
-    flex-direction: column;
-    align-items: flex-start;
     display: none;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: #292929;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    gap: 10px;
+    box-sizing: border-box;
   }
-
+  
   .header-right ul.active {
     display: flex;
   }
-
-  .header-right ul li {
-    margin-left: 0;
-    margin-bottom: 10px;
+  
+  .hamburger {
+    display: block;
   }
-
+  
   .dropdown-menu {
     position: static;
     display: none;
-    background-color: #555;
-    border-radius: 0;
+    background-color: #333;
     box-shadow: none;
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
   }
-
+  
   .dropdown-menu.active {
-    display: block; /* Show dropdown on click (for mobile) */
-  }
-
-  .hamburger {
     display: block;
   }
 }
 
 @media (max-width: 480px) {
+  header {
+    padding: 15px;
+    width: calc(100% - 30px);
+  }
+  
   .header-left h1 {
-    font-size: 1.2em;
+    font-size: 1.3rem;
   }
-
-  .header-left p {
-    font-size: 0.8em;
+  
+  .main-content {
+    padding-top: 80px;
   }
-
-  .header-right ul li a {
-    font-size: 0.9em;
-  }
-
-  .dropdown-menu {
-    min-width: 120px;
+  
+  .hamburger {
+    margin-left: 10px;
+    font-size: 1.3em;
   }
 }
 
@@ -231,4 +262,45 @@ header {
 
 
 
+/* Add these styles to your CSS */
 
+/* Desktop hover dropdown */
+@media (min-width: 769px) {
+  .dropdown:hover .dropdown-menu {
+    display: block !important; /* Important to override JS-added styles */
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateY(0) !important;
+  }
+
+  /* Remove pointer events from dropdown to prevent interference */
+  .dropdown > a {
+    pointer-events: none;
+  }
+
+  .dropdown-menu {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+  }
+
+  .dropdown-menu.active {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile click dropdown */
+@media (max-width: 768px) {
+  .dropdown-menu {
+    display: none;
+  }
+
+  .dropdown-menu.active {
+    display: block;
+  }
+}

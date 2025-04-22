@@ -14,46 +14,96 @@
 </head>
 <body>
   <!-- Fixed Header -->
-  <header>
-    <div class="header-left">
-      <h1>Dr. NISHANT SINGH</h1>
-      <p>Associate Professor, Department of Mechanical Engineering</p>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Other Page - Dr. NISHANT SINGH</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <div class="sidebar-toggle" id="sidebarToggle">
+      <i class="fas fa-bars"></i>
     </div>
-    <nav class="header-right">
-      <div class="hamburger" id="hamburger">
-        <i class="fas fa-bars"></i>
-      </div>
-      <ul id="nav-menu">
+    
+    <div class="sidebar" id="sidebar">
+      <ul class="sidebar-menu">
         <li><a href="../index.html">Home</a></li>
-        <li class="dropdown">
-          <a href="#">About <i class="fa-solid fa-circle-chevron-down" style="color: #ff9900;"></i></a>
-          <div class="dropdown-menu">
-            <a href="abouted.html">Education</a>
-            <a href="aboutawards.html">Awards Received</a>
-          </div>
+        <li>
+          <a href="#" class="sidebar-dropdown-toggle">About <i class="fas fa-chevron-down"></i></a>
+          <ul class="sidebar-dropdown">
+            <li><a href="abouted.html">Education</a></li>
+            <li><a href="aboutawards.html">Awards Received</a></li>
+          </ul>
         </li>
-        <li class="dropdown">
-          <a href="#">Research & Publications <i class="fa-solid fa-circle-chevron-down" style="color: #ff9900;"></i></a>
-          <div class="dropdown-menu">
-            <a href="research.html">Research</a>
-            <a href="publications.html">Publications</a>
-            <a href="journal.html">Journal</a>
-          </div>
+        <li>
+          <a href="#" class="sidebar-dropdown-toggle">Research & Publications <i class="fas fa-chevron-down"></i></a>
+          <ul class="sidebar-dropdown">
+            <li><a href="research.html">Research</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="journal.html">Journal</a></li>
+          </ul>
         </li>
-        <li class="dropdown">
-          <a href="#">Outreach Activities <i class="fa-solid fa-circle-chevron-down" style="color: #ff9900;"></i></a>
-          <div class="dropdown-menu">
-            <a href="conferences.html">Conferences</a>
-            <a href="professional-societies.html">Professional Societies</a>
-            <a href="keynote-speaker.html">Keynote Speaker</a>
-            <a href="session-chair.html">Session Chair</a>
-            <a href="workshop.html">Workshop</a>
-          </div>
+        <li>
+          <a href="#" class="sidebar-dropdown-toggle">Outreach Activities <i class="fas fa-chevron-down"></i></a>
+          <ul class="sidebar-dropdown">
+            <li><a href="conferences.html">Conferences</a></li>
+            <li><a href="professional-societies.html">Professional Societies</a></li>
+            <li><a href="keynote-speaker.html">Keynote Speaker</a></li>
+            <li><a href="session-chair.html">Session Chair</a></li>
+            <li><a href="workshop.html">Workshop</a></li>
+          </ul>
         </li>
-        <li><a href="contact.html" class="contact-link">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
-    </nav>
-  </header>
+    </div>
+    
+    <div class="overlay" id="overlay"></div>
+    
+    <header>
+      <div class="header-left">
+        <h1>Dr. NISHANT SINGH</h1>
+        <p>Associate Professor, Department of Mechanical Engineering</p>
+      </div>
+      <nav class="header-right">
+        <div class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul id="nav-menu">
+          <li><a href="../index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="#">About <i class="fa-solid fa-circle-chevron-down" style="color: #ff9900;"></i></a>
+            <div class="dropdown-menu">
+              <a href="abouted.html">Education</a>
+              <a href="aboutawards.html">Awards Received</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#">Research & Publications <i class="fa-solid fa-circle-chevron-down" style="color: #ff9900;"></i></a>
+            <div class="dropdown-menu">
+              <a href="research.html">Research</a>
+              <a href="publications.html">Publications</a>
+              <a href="journal.html">Journal</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#">Outreach Activities <i class="fa-solid fa-circle-chevron-down" style="color: #ff9900;"></i></a>
+            <div class="dropdown-menu">
+              <a href="conferences.html">Conferences</a>
+              <a href="professional-societies.html">Professional Societies</a>
+              <a href="keynote-speaker.html">Keynote Speaker</a>
+              <a href="session-chair.html">Session Chair</a>
+              <a href="workshop.html">Workshop</a>
+            </div>
+          </li>
+          <li><a href="contact.html" class="contact-link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  
+ 
 <section class="contact-form-section">
     <h2>Contact Me</h2>
     <form class="contact-form" id="contactForm">

@@ -1,7 +1,7 @@
 /* Carousel Container */
 .carousel-container {
   margin: 0 auto;
-  margin-top: 140px; /* Reduced top margin */
+  margin-top: 90px; /* Reduced top margin */
   position: relative;
   height: 60vh;
   width: 85%;
