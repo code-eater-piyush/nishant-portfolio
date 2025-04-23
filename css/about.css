@@ -1,186 +1,209 @@
-/*about css */
-/* General Styles */
+/* Complete CSS for About Page with Rectangular Images and Video Optimization */
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-  }
- 
-  h2 {
-    font-size: 3.5em;
-    color: #333;
-    margin-bottom: 20px;
-    text-align: center;
-    position: relative;
-    padding-top: 00px;
-    margin-top: 0;
-    
-  }
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
 
-  h2::after {
-    content: '';
-    display: block;
-    width: 100px;
-    height: 3px;
-    background-color: #f39c12; /* Accent line under heading */
-    margin: 10px auto 0;
-    margin-top: 0;
-  }
-  
-  /* Education and Qualifications Section */
-  .education-section {
-    padding: 60px 20px;
-    background-color: #fff;
-    margin-top: 50px;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .education-container {
-    display: flex;  
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    margin-top: 40px;
-  }
-  
-  .education-card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
-    width: 300px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .education-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  
-  .education-card img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 15px;
-    object-fit: contain; /* Ensure logos fit properly */
-  }
-  
-  .education-card h3 {
-    font-size: 1.2em;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .education-card p {
-    font-size: 0.9em;
-    color: #666;
-  }
-  
-  /* Courses Section */
-  .courses-section {
-    padding: 60px 20px;
-    background-color: white;
-  }
-  
-  .courses-content {
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 50px;
-  }
-  
-  .courses-content ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .courses-content li {
-    font-size: 1em;
-    color: #555;
-    padding: 10px 0;
-    border-bottom: 1px solid #eee;
-    line-height: 1.6;
-  }
-  
-  .courses-content li:last-child {
-    border-bottom: none;
-  }
-  
-  /* Awards Gallery Section */
-.awards-gallery {
-  padding: 60px 20px;
+/* Responsive Headings */
+h2 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  position: relative;
+  padding-top: 0;
+  margin-top: 0;
+  font-weight: 600;
+}
+
+h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #f39c12;
+  margin: 1rem auto 0;
+}
+
+h3 {
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+/* Education Section */
+.education-section {
+  padding: 3rem 1.25rem;
   background-color: #fff;
-  margin-top: 50px;
+  margin-top: 3rem;
+}
+
+.education-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 2rem auto 0;
+}
+
+.education-card {
+  background-color: #fff;
+  border: 1px solid #e1e1e1;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.education-card img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 1rem;
+  object-fit: contain;
+}
+
+.education-card h3 {
+  color: #222;
+  margin-bottom: 0.75rem;
+}
+
+.education-card p {
+  font-size: 0.95rem;
+  color: #666;
+  margin: 0;
+}
+
+/* Courses Section */
+.courses-section {
+  padding: 3rem 1.25rem;
+  background-color: #fff;
+}
+
+.courses-content {
+  max-width: 800px;
+  margin: 2rem auto 0;
+  background-color: #fff;
+  border: 1px solid #e1e1e1;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.courses-content ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.courses-content li {
+  font-size: 1rem;
+  color: #555;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #eee;
+  line-height: 1.6;
+}
+
+.courses-content li:last-child {
+  border-bottom: none;
+}
+
+/* Awards Gallery Section */
+.awards-gallery {
+  padding: 3rem 1.25rem;
+  background-color: #fff;
+  margin-top: 3rem;
 }
 
 .video-section {
-  max-width: 800px;
-  margin: 0 auto 40px;
+  max-width: 900px;
+  margin: 0 auto 2.5rem;
   text-align: center;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
 }
 
 .video-section video {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  max-width: 800px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
 }
 
 .photo-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
   max-width: 1200px;
-  margin: 0 auto 40px;
+  margin: 0 auto 2.5rem;
 }
 
 .photo {
   background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 10px;
+  border: 1px solid #e1e1e1;
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  aspect-ratio: 16/9; /* Rectangular aspect ratio */
 }
 
 .photo:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
 .photo img {
   width: 100%;
-  height: 200px;
+  height: 100%;
   object-fit: cover;
   cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.photo:hover img {
+  transform: scale(1.05);
 }
 
 .awards-list {
   max-width: 800px;
   margin: 0 auto;
   background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e1e1e1;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .awards-list h3 {
-  font-size: 1.5em;
-  color: #333;
-  margin-bottom: 20px;
   text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.awards-list ul {
+  padding-left: 1.25rem;
+}
+
+.awards-list li {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  color: #555;
 }
 
 /* Lightbox Styles */
@@ -191,7 +214,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.95);
   z-index: 1000;
   text-align: center;
 }
@@ -204,20 +227,69 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 .close {
   position: absolute;
-  top: 20px;
-  right: 30px;
+  top: 1.5rem;
+  right: 2rem;
   color: #fff;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: bold;
   cursor: pointer;
-  transition: color 0.3s ease;
+  transition: color 0.2s ease;
 }
 
 .close:hover {
   color: #f39c12;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .photo-gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .photo-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .video-section {
+    padding-bottom: 75%; /* More square aspect ratio on mobile */
+  }
+  
+  .education-container {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .photo-gallery {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+  }
+  
+  .photo {
+    aspect-ratio: 16/9; /* Maintain rectangular shape even on mobile */
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+  }
+  
+  h3 {
+    font-size: 1.4rem;
+  }
+  
+  .awards-list {
+    padding: 1.25rem;
+  }
+  
+  .awards-list li {
+    font-size: 0.95rem;
+  }
 }
