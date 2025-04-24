@@ -179,7 +179,7 @@ body {
       font-size: 0.9em;
     }
   }
-<<<<<<< HEAD
+
   .year-header {
     cursor: pointer;
     color: #333;
@@ -236,7 +236,7 @@ body {
   line-height: 1.6;
   color: #333;
 }
-=======
+
 
   /* Responsive Design for Larger Screens */
   @media (min-width: 1200px) {
@@ -293,4 +293,4 @@ body {
       font-size: 0.8em;
     }
   }
->>>>>>> 98f25506ce6df26901211328a731c3630f3b5b34
+
