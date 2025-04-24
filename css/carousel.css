@@ -129,7 +129,7 @@
 @media (max-width: 768px) {
   .carousel-container {
     height: 40vh; /* Reduced from 45vh */
-    margin-top: 150px;
+    margin-top: 90px;
     width: 94%;
   }
   
