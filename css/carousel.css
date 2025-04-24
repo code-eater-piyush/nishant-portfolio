@@ -1,7 +1,7 @@
 /* Carousel Container */
 .carousel-container {
   margin: 0 auto;
-  margin-top: 90px; /* Reduced top margin */
+  margin-top: 90px;
   position: relative;
   height: 60vh;
   width: 85%;
@@ -10,7 +10,7 @@
   box-shadow: 0 2px 20px rgba(53, 53, 53, 0.3);
   border-radius: 12px;
   transition: all 0.4s ease;
-
+  box-sizing: border-box;
 }
 
 .carousel-container:hover {
@@ -20,8 +20,10 @@
 
 .top-carousel {
   padding: 30px 0 60px;
-  background: #f8f8f8; /* Light background to separate sections */
+  background: #f8f8f8;
   margin-bottom: 40px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* Carousel Slides */
@@ -29,6 +31,7 @@
   display: flex;
   transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   height: 100%;
+  width: 100%;
 }
 
 .slide {
@@ -80,6 +83,7 @@
   position: relative;
   z-index: 10;
   padding-bottom: 10px;
+  width: 100%;
 }
 
 .carousel-dots .dot {
@@ -104,66 +108,82 @@
   border-color: rgba(0,0,0,0.1);
 }
 
-/* Responsive Design */
+/* Responsive Design - Height Adjustments */
+@media (max-width: 1200px) {
+  .carousel-container {
+    height: 55vh;
+  }
+}
+
 @media (max-width: 992px) {
   .carousel-container {
-      width: 90%;
-      height: 55vh;
+    width: 90%;
+    height: 50vh; /* Reduced from 55vh */
   }
   
   .top-carousel {
-      padding: 25px 0 50px;
+    padding: 25px 0 50px;
   }
 }
 
 @media (max-width: 768px) {
   .carousel-container {
-      height: 45vh;
-      margin-top: 30px;
+    height: 40vh; /* Reduced from 45vh */
+    margin-top: 150px;
+    width: 94%;
   }
   
   .prev, .next {
-      width: 40px;
-      height: 40px;
-      font-size: 18px;
-      padding: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    padding: 10px;
   }
   
   .carousel-dots .dot {
-      width: 10px;
-      height: 10px;
+    width: 10px;
+    height: 10px;
   }
   
   .top-carousel {
-      padding-bottom: 40px;
+    padding-bottom: 40px;
   }
 }
 
 @media (max-width: 576px) {
   .carousel-container {
-      height: 35vh;
-      width: 95%;
-      border-radius: 8px;
+    height: 30vh; /* Reduced from 35vh */
+    width: 95%;
+    border-radius: 8px;
   }
   
   .prev, .next {
-      width: 35px;
-      height: 35px;
-      font-size: 16px;
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
   }
   
   .carousel-dots .dot {
-      width: 8px;
-      height: 8px;
-      margin: 0 4px;
+    width: 8px;
+    height: 8px;
+    margin: 0 4px;
   }
   
   .top-carousel {
-      padding: 20px 0 30px;
+    padding: 20px 0 30px;
   }
 }
-@media (max-width: 768px) {
+
+/* Extra Small Devices */
+@media (max-width: 400px) {
   .carousel-container {
-    margin-top: 150px; /* Increased to account for mobile nav height */
+    height: 25vh; /* Further reduced for very small devices */
+    margin-top: 130px;
+  }
+  
+  .prev, .next {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
   }
 }

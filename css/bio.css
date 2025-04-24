@@ -1,3 +1,4 @@
+/* Biography Section */
 .biography {
   display: flex;
   flex-wrap: wrap;
@@ -11,6 +12,8 @@
   border: 0.1px solid #ddd;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   min-height: 65vh;
+  width: 85%;
+  box-sizing: border-box;
 }
 
 .biography:hover {
@@ -61,7 +64,7 @@
   padding: 20px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   position: relative;
-  padding-bottom: 60px; /* Space for button */
+  padding-bottom: 60px;
 }
 
 .bio-hey {
@@ -107,6 +110,12 @@
 }
 
 /* Responsive Design */
+@media (max-width: 1200px) {
+  .biography {
+    width: 90%;
+  }
+}
+
 @media (max-width: 992px) {
   .bio-heading {
     font-size: 2.2em;
@@ -122,6 +131,7 @@
     flex-direction: column;
     margin-top: 30px;
     min-height: auto;
+    width: 90%;
   }
   
   .bio-image {
@@ -150,6 +160,11 @@
 }
 
 @media (max-width: 480px) {
+  .biography {
+    width: 95%;
+    padding: 15px;
+  }
+  
   .bio-heading {
     font-size: 1.8em;
   }
