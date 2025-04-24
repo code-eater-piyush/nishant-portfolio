@@ -1,7 +1,7 @@
 /* Carousel Container */
 .carousel-container {
   margin: 0 auto;
-  margin-top: 90px;
+  margin-top: 50px;
   position: relative;
   height: 60vh;
   width: 85%;
@@ -129,7 +129,7 @@
 @media (max-width: 768px) {
   .carousel-container {
     height: 40vh; /* Reduced from 45vh */
-    margin-top: 90px;
+    margin-top: 50px;
     width: 94%;
   }
   
