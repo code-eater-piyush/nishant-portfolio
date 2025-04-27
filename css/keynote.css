@@ -5,7 +5,7 @@ body {
 /*keynote*/
 /* Main Content Styles */
 main.keynote-speaker {
-    padding: 120px 20px 20px; /* Adjusted for fixed header */
+    padding: 50px 20px 20px; /* Adjusted for fixed header */
     max-width: 1200px;
     margin: 0 auto;
   }
