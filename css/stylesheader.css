@@ -214,6 +214,9 @@ header {
     gap: 10px;
     box-sizing: border-box;
   }
+  .header-left p{
+    font-size: 0.5rem;
+  }
   
   .header-right ul.active {
     display: flex;
@@ -243,9 +246,12 @@ header {
     padding: 15px;
     width: calc(100% - 30px);
   }
-  
+ 
   .header-left h1 {
     font-size: 0.8rem;
+  }
+  .header-left p{
+    font-size: 0.48rem;
   }
   
   .main-content {
