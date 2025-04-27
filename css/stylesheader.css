@@ -214,8 +214,11 @@ header {
     gap: 10px;
     box-sizing: border-box;
   }
+ .header-left h1 {
+    font-size: 2.2rem;
+  }
   .header-left p{
-    font-size: 0.5rem;
+    font-size: 0.8rem;
   }
   
   .header-right ul.active {
@@ -248,7 +251,7 @@ header {
   }
  
   .header-left h1 {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
   }
   .header-left p{
     font-size: 0.48rem;
